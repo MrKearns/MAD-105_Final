@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MAD-105_Final</string>
+
+    <string name="todaysDate">%s</string>
+
+
+    <string-array name="spinnerChoices">
+        <item>Movie</item>
+        <item>TV Show</item>
+    </string-array>
+
+</resources>
