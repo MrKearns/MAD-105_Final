@@ -110,8 +110,8 @@
 
     <Spinner
         android:id="@+id/movieOrTVSpinner"
-        android:layout_width="133dp"
-        android:layout_height="62dp"
+        android:layout_width="129dp"
+        android:layout_height="53dp"
         android:layout_marginStart="184dp"
         android:layout_marginTop="48dp"
         android:entries="@array/spinnerChoices"
@@ -138,9 +138,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:fontFamily="@font/arial_black"
         android:text="Add New Watch Item"
-        android:textSize="20sp"
+        android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.181"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
