@@ -12,6 +12,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="28dp"
         android:text="Item Example"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -21,6 +22,7 @@
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
         android:numStars="5"
+        android:progressTint="#ffde64"
         android:scaleX="0.5"
         android:scaleY="0.5"
         android:stepSize="0.5"

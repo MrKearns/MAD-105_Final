@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9E9D9C"
+    android:background="#5eb8de"
     tools:context=".MainActivity2">
 
     <TextView
@@ -14,6 +14,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="56dp"
         android:text="Title"
+        android:textStyle="bold"
+        android:textColor="#ffde64"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
@@ -39,6 +41,7 @@
         android:layout_marginTop="64dp"
         android:ems="10"
         android:hint="MM-DD-YYYY"
+
         android:inputType="date"
         android:selectAllOnFocus="true"
         android:text="@string/todaysDate"
@@ -52,6 +55,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="64dp"
         android:text="Date Watched"
+        android:textColor="#ffde64"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleInput" />
 
@@ -62,6 +67,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="60dp"
         android:text="Rating"
+        android:textColor="#ffde64"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dateWatched" />
 
@@ -71,6 +78,7 @@
         android:layout_height="42dp"
         android:layout_marginStart="76dp"
         android:layout_marginTop="56dp"
+        android:progressTint="#ffde64"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toEndOf="@+id/textView4"
@@ -83,6 +91,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="48dp"
         android:text="Movie/TV"
+        android:textStyle="bold"
+        android:textColor="#ffde64"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/starRating" />
 
@@ -93,6 +103,8 @@
         android:layout_marginTop="36dp"
         android:layout_marginEnd="104dp"
         android:text="Notes"
+        android:textColor="#ffde64"
+        android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/notesInput"
         app:layout_constraintHorizontal_bias="0.355"
         app:layout_constraintStart_toStartOf="parent"
@@ -103,6 +115,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Add"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -115,6 +128,7 @@
         android:layout_marginStart="184dp"
         android:layout_marginTop="48dp"
         android:entries="@array/spinnerChoices"
+        android:textColor="#ffde64"
         app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/starRating" />
 
@@ -139,7 +153,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/arial_black"
-        android:text="Add New Watch Item"
+        android:text="Add New Watched Item"
+        android:textColor="#ffde64"
         android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.181"

@@ -22,9 +22,17 @@ class MyListviewAdapter(context: Context?, resource: Int, objects: MutableList<l
         val item = getItem(position)
         val textView = convertView!!.findViewById<TextView>(R.id.listItemTitle)
         val ratingBar = convertView!!.findViewById<RatingBar>(R.id.listItemRatingBar)
+
+        val notes = item!!.review
+        val date = item!!.date
+
         textView.text = item!!.title
         ratingBar.rating = item!!.rating
 
+
+        //val tvMovie = item.
+
+        // -- DISABLE RATING BAR --
         ratingBar.isEnabled = false
 
         return convertView
