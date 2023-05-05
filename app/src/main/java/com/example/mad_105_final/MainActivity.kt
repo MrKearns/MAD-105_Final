@@ -25,8 +25,8 @@ class MainActivity : AppCompatActivity() {
 
         //var itemOne = listItem("Movie 1", date = LocalDate.parse("10-01-2023", formatter), rating = 5.0F, review =  "Good")
         //var itemTwo = listItem("movie 2", null, 3.0F, "not bad")
-        arrayOfListItemClass += itemOne
-        arrayOfListItemClass += itemTwo
+        //arrayOfListItemClass += itemOne
+        //arrayOfListItemClass += itemTwo
 
 
         //  ---- THE 'ADD' BUTTON ----
@@ -49,13 +49,20 @@ class MainActivity : AppCompatActivity() {
 
                 val selected = adapter.getItem(p2)
                 val title = selected?.title
+                val date = selected?.date
+                val rating = selected?.rating
+                val summary = selected?.review
 
                 Toast.makeText(this@MainActivity, "This will go to a full details page... eventually", Toast.LENGTH_LONG).show()
 
-                //summaryTitle.text = "HI THERE"
 
+                // -- SET INTENTS FOR SUMMARY SCREEN --
                 val intent = Intent(this@MainActivity, MainActivity3::class.java)
                 intent.putExtra("title", title.toString())
+                intent.putExtra("date", date.toString())
+                intent.putExtra("summary", summary.toString())
+                intent.putExtra("rating", rating?.toFloat())
+
                 startActivity(intent)
             }
         }
