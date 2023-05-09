@@ -34,6 +34,8 @@ class MainActivity3 : AppCompatActivity() {
 
         if (summaryTvMovie.text == "TV Show") {
             iconImage.setImageResource(R.drawable.tv_icon)
+        } else if (summaryTvMovie.text == "Movie") {
+            iconImage.setImageResource(R.drawable.movie_icon)
         } else {
             iconImage.setImageResource(R.drawable.movie_icon)
         }

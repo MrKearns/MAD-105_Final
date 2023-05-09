@@ -12,7 +12,6 @@ var things = arrayOf("")
 var arrayOfListItemClass = arrayOf<listItem>()
 
 
-
 class MainActivity : AppCompatActivity() {
 
     @SuppressLint("MissingInflatedId")
@@ -49,8 +48,6 @@ class MainActivity : AppCompatActivity() {
         listView.onItemClickListener = object : AdapterView.OnItemClickListener{
             override fun onItemClick(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
 
-
-
                 val selected = adapter.getItem(p2)
                 val title = selected?.title
                 val date = selected?.date
@@ -58,8 +55,7 @@ class MainActivity : AppCompatActivity() {
                 val summary = selected?.review
                 val tvMovie = selected?.TvOrMovie
 
-                Toast.makeText(this@MainActivity, "This will go to a full details page... eventually", Toast.LENGTH_LONG).show()
-
+                //Toast.makeText(this@MainActivity, "This will go to a full details page... eventually", Toast.LENGTH_LONG).show()
 
                 // -- SET INTENTS FOR SUMMARY SCREEN --
                 val intent = Intent(this@MainActivity, MainActivity3::class.java)
@@ -72,12 +68,8 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
             }
         }
-
     }
-
 }
-
-
 
 private operator fun <T> Array<T>.plusAssign(rBar: RatingBar?) {
 
