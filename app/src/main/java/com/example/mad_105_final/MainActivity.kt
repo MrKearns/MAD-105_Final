@@ -19,8 +19,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        print("---THE APP STARTED---")
-
         //var summaryTitle = findViewById<TextView>(R.id.summaryTitle)
         //var summaryDate = findViewById<TextView>(R.id.summaryDate)
 
