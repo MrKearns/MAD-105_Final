@@ -26,8 +26,11 @@ class MainActivity3 : AppCompatActivity() {
         summaryNotes.text = intent.getStringExtra("summary")
         summaryTvMovie.text = intent.getStringExtra("tvOrMovie")
 
-        System.out.println("clicked")
-        System.out.println(summaryTvMovie.text)
+        if (summaryNotes.text.isBlank()){
+            summaryNotes.text = "(No Notes)"
+        } else {
+           return
+        }
 
         if (summaryTvMovie.text == "TV Show") {
             iconImage.setImageResource(R.drawable.tv_icon)
