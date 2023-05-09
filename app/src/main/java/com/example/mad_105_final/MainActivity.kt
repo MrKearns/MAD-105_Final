@@ -20,6 +20,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        print("---THE APP STARTED---")
+
         //var summaryTitle = findViewById<TextView>(R.id.summaryTitle)
         //var summaryDate = findViewById<TextView>(R.id.summaryDate)
 
@@ -47,11 +49,14 @@ class MainActivity : AppCompatActivity() {
         listView.onItemClickListener = object : AdapterView.OnItemClickListener{
             override fun onItemClick(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
 
+
+
                 val selected = adapter.getItem(p2)
                 val title = selected?.title
                 val date = selected?.date
                 val rating = selected?.rating
                 val summary = selected?.review
+                val tvMovie = selected?.TvOrMovie
 
                 Toast.makeText(this@MainActivity, "This will go to a full details page... eventually", Toast.LENGTH_LONG).show()
 
@@ -62,6 +67,7 @@ class MainActivity : AppCompatActivity() {
                 intent.putExtra("date", date.toString())
                 intent.putExtra("summary", summary.toString())
                 intent.putExtra("rating", rating?.toFloat())
+                intent.putExtra("tvOrMovie", tvMovie.toString())
 
                 startActivity(intent)
             }

@@ -81,11 +81,12 @@ class MainActivity2 : AppCompatActivity() {
                 }
 
                 // -- MAKE NEW LIST ITEM A CLASS ITEM --
-                var newListItem = listItem(title = title.text.toString(), date, ratingFloat, notes.text.toString())
+                var newListItem = listItem(title = title.text.toString(), date, ratingFloat, notes.text.toString(), movieOrTVChoice)
                 //completeList += newListItem
 
                 if (!arrayOfListItemClass.contains(newListItem)){
                     arrayOfListItemClass += newListItem
+                    System.out.println("----- ${newListItem.TvOrMovie} -----")
                 }
 
 

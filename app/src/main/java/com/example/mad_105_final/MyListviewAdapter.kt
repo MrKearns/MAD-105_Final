@@ -26,12 +26,13 @@ class MyListviewAdapter(context: Context?, resource: Int, objects: MutableList<l
 
         val notes = item!!.review
         val date = item!!.date
+        val tvMovie = item!!.TvOrMovie
 
         textView.text = item!!.title
         ratingBar.rating = item!!.rating
 
 
-        //val tvMovie = item.
+
 
         // -- DISABLE RATING BAR --
         ratingBar.isEnabled = false

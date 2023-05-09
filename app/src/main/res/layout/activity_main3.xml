@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#5eb8de"
     tools:context=".MainActivity3">
 
     <TextView
@@ -14,8 +15,9 @@
         android:layout_marginTop="28dp"
         android:gravity="center|left"
         android:text="Title"
+        android:textColor="#ffde64"
         android:textSize="34sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/summaryTvOrMovieImage"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -25,6 +27,7 @@
         android:layout_marginTop="16dp"
         android:gravity="center"
         android:text="date"
+        android:textColor="#ffde64"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,6 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
+        android:progressTint="#ffde64"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,8 +52,9 @@
         android:layout_marginTop="8dp"
         android:gravity="center"
         android:text="TV/Movie"
+        android:textColor="#ffde64"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/summaryTvOrMovieImage" />
 
     <EditText
         android:id="@+id/summaryNotes"
@@ -59,19 +64,21 @@
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
+        android:textColor="#ffde64"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/summaryDate" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/summaryTvOrMovieImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="28dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"
         app:srcCompat="@mipmap/ic_launcher" />
 
     <Button
